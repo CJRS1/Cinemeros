@@ -1,0 +1,16 @@
+.footer-nav__credits{
+    display: flex;
+    margin: 1rem 0rem 0.5rem 1rem;
+    justify-content: center;
+    /* background: black; */
+}
+
+#footer{
+    margin-top: 0rem;
+}
+@media screen and (max-width: 600px) {
+    .footer-nav__credits{
+        display: block;
+        padding-bottom: 4rem;
+    }
+}

@@ -1,0 +1,13 @@
+.menu__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+}
+a{
+    text-decoration: none;
+    font-size: 500;
+}
+.img_logo{
+    width: 100px;
+}
