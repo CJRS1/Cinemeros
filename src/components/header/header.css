@@ -6,10 +6,14 @@
 }
 
 .nav_container{
-    padding: 0.8rem 0rem 0.8rem 0rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
 
 }
 
 .nav_menu{
     padding: 1rem 1rem 0rem 1rem;
+}
+
+button{
+    margin: 0rem 0rem 0rem 1rem;
 }
