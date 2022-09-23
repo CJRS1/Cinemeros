@@ -16,10 +16,11 @@ const Header = () => {
       </nav>
       
       <nav className='nav_container'>
-      <a href="#contact" className='nav_menu' >Conócenos</a>
+      <a href="#contact" className='nav_menu' >Contáctanos</a>
       <a href="#work" className='nav_menu' >Trabaja con nosotros</a>
       
       </nav>
+
 
       <nav className='nav_container'>
       <button className="btn">Registrarse</button>

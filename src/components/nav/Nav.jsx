@@ -14,11 +14,11 @@ const Nav = () => {
     return (
         <div className='menu__nav-container'>
             <nav className='menu__container'>
-                <a href="#Header" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}> <img className='img_logo' src={logo} alt="Cinemeros" /></a>
-                <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><BiMoviePlay style={{ fontSize: '30px' }} />  Películas </a>
-                <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><MdOutlinePlace style={{ fontSize: '30px' }} /> Ubícanos</a>
-                <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><GiSpellBook style={{ fontSize: '30px' }} /> Promociones</a>
-                <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#food' ? 'active' : ''}><MdFastfood style={{ fontSize: '30px' }} /> Alimentos y bebidas</a>
+                <a href="#Header" onClick={() => setActiveNav('#')} className={activeNav === '#Header' ? 'active' : ''}> <img className='img_logo' src={logo} alt="Cinemeros" /></a>
+                <a href="#Listings" onClick={() => setActiveNav('#Listings')} className={activeNav === '#Listings' ? 'active' : ''}><BiMoviePlay style={{ fontSize: '30px' }} />  Películas </a>
+                <a href="#placed" onClick={() => setActiveNav('#about')} className={activeNav === '#placed' ? 'active' : ''}><MdOutlinePlace style={{ fontSize: '30px' }} /> Ubícanos</a>
+                <a href="#promo" onClick={() => setActiveNav('#experience')} className={activeNav === '#promo' ? 'active' : ''}><GiSpellBook style={{ fontSize: '30px' }} /> Promociones</a>
+                <a href="#food" onClick={() => setActiveNav('#contact')} className={activeNav === '#food' ? 'active' : ''}><MdFastfood style={{ fontSize: '30px' }} /> Alimentos y bebidas</a>
             </nav>
         </div>
         
