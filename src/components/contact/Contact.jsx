@@ -32,13 +32,13 @@ const Contact = () => {
                         <MdOutlineEmail className='contact__option-icon' />
                         <h4>Email</h4>
                         <h5>reyes.christian@pucp.pe</h5>
-                        <a href="mailto:reyes.christian@pucp.pe" target="_blank">¿Necesitas ayuda? Envíanos un mensaje</a>
+                        <a href="mailto:reyes.christian@pucp.pe" rel="noreferrer" target="_blank">¿Necesitas ayuda? Envíanos un mensaje</a>
                     </article>
                     <article className="contact__option">
                         <BsWhatsapp className='contact__option-icon' />
                         <h4>Whatsapp</h4>
                         <h5>+51 993221518</h5>
-                        <a href="https://wa.me/+51993221518" target="_blank">¿Necesitas ayuda? Envínos un mensaje</a>
+                        <a href="https://wa.me/+51993221518" rel="noreferrer" target="_blank">¿Necesitas ayuda? Envínos un mensaje</a>
                     </article>
                 </div>
 
