@@ -13,9 +13,9 @@ const Header = () => {
     <div className='header_container' id='Header'>
       <nav className='nav_container'>
         
-      <a href="https://www.facebook.com" target="_blank" rel="noreferrer "className='nav_menu' ><BsFacebook style={{ fontSize: '30px' }} /></a>
-      <a href="https://www.instagram.com" target="_blank" rel="noreferrer " className='nav_menu'><BsInstagram style={{ fontSize: '30px' }} /></a>
-      <a href="https://twitter.com/?lang=en" target="_blank" rel="noreferrer "  className='nav_menu'><AiFillTwitterCircle style={{ fontSize: '30px' }} /></a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"className='nav_menu' ><BsFacebook style={{ fontSize: '30px' }} /></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className='nav_menu'><BsInstagram style={{ fontSize: '30px' }} /></a>
+      <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"  className='nav_menu'><AiFillTwitterCircle style={{ fontSize: '30px' }} /></a>
       </nav>
       <nav className='nav_container'>
 
@@ -26,7 +26,7 @@ const Header = () => {
       <nav className='nav_container'>
       <button className="btn">Registrarse</button>
       <button className="btn">Iniciar sesión</button>
-      <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className='nav_menu' ><BsCartPlusFill style={{ fontSize: '30px' }} /></a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className='nav_menu' ><BsCartPlusFill style={{ fontSize: '30px' }} /></a>
       </nav>
       
     </div>
