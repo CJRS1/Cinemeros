@@ -12,6 +12,10 @@
     background-color: azure;
 }
 
+.movieImage:hover{
+    opacity: 0.5;
+}
+
 .listingsGrid{
     display: grid;
     grid-template-columns: repeat(auto-fill,230px);

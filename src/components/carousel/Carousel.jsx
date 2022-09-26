@@ -3,6 +3,7 @@ import Promocion1 from '../../assets/Promocion1.jpg';
 import Promocion2 from '../../assets/Promocion2.jpg';
 import Comunicado from '../../assets/Comunicado.jpg';
 import './carousel.css'
+import * as React from 'react'
 
 function IndividualIntervalsExample() {
     return (

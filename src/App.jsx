@@ -9,6 +9,7 @@ import NotFoundPage from './components/pages/NotFoundPage/NotFoundPage'
 import Food from './components/pages/Food/Food'
 import Promo from './components/pages/Promo/Promo'
 
+
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 const App = () => {
