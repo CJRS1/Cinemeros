@@ -4,12 +4,12 @@ import {BsFacebook} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import {AiFillTwitterCircle} from 'react-icons/ai'
 import {BsCartPlusFill} from 'react-icons/bs'
-import {BrowserRouter, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {HashLink as Link} from 'react-router-hash-link'
 
 const Header = () => {
   return (
-    <BrowserRouter>
+    
     <div className='header_container' id='Header'>
       <nav className='nav_container'>
         
@@ -30,7 +30,7 @@ const Header = () => {
       </nav>
       
     </div>
-    </BrowserRouter>
+    
     
   )
 }

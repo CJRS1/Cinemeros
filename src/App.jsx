@@ -15,11 +15,11 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 const App = () => {
     return (
         <>
-            <Header />
-            <Nav />
+            
 
             <BrowserRouter>
-
+            <Header />
+            <Nav />
             <Routes>
 
             <Route exact path="/" element={<Home/>}/> 
@@ -30,11 +30,11 @@ const App = () => {
             <Route exact path="*" element={<NotFoundPage/>}/> 
 
             </Routes>
-            
+            <Footer />
             </BrowserRouter>
 
             
-            <Footer />
+            
         </>
     )
 }

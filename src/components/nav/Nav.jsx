@@ -4,7 +4,7 @@ import { MdFastfood } from 'react-icons/md'
 import { MdOutlinePlace } from 'react-icons/md'
 import { GiSpellBook } from 'react-icons/gi'
 import { useState } from 'react'
-import {BrowserRouter,NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {HashLink as Link} from 'react-router-hash-link'
 import logo from '../../assets/Cinemeros.jpg'
 import './nav.css'
@@ -14,7 +14,7 @@ import './nav.css'
 const Nav = () => {
     const [activeNav, setActiveNav] = useState('#');
     return (
-        <BrowserRouter>
+        
         <div className='menu__nav-container'>
             <nav className='menu__container'>
                 <Link to="/#Header"> <img className='img_logo' src={logo} alt="Cinemeros" /></Link>
@@ -24,7 +24,7 @@ const Nav = () => {
                 <NavLink to="/food" ><MdFastfood style={{ fontSize: '30px' }} /> Alimentos y bebidas</NavLink>
             </nav>
         </div>
-        </BrowserRouter>
+        
     )
 }
 

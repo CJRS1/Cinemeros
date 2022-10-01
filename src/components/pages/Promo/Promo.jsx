@@ -19,7 +19,7 @@ const Promo = () => {
     return (
         <div className='div__promo'>
             <nav className='nav__promo'>
-                    <a className='container__promo' href="">
+                    <a className='container__promo' href="!#">
                         <img className='img__promo' src={Promo1} alt="" />
                         <div className="details__promo">
                             {/* <h6>Función de descuento</h6> */}
@@ -27,14 +27,14 @@ const Promo = () => {
                             {/* <button className="btn">VER DETALLES</button> */}
                         </div>
                     </a>
-                <a className='container__promo' href="">
+                <a className='container__promo' href="!#">
                     <img className='img__promo' src={Promo2} alt="" />
                     <div className="details__promo">
                         {/* <h6>Función de descuento</h6> */}
                         <DetailsPromo2/>
                     </div>
                 </a>
-                <a className='container__promo' href="">
+                <a className='container__promo' href="!#">
                     <img className='img__promo' src={Promo3} alt="" />
                     <div className="details__promo">
                         {/* <h6>Función de descuento</h6> */}
@@ -42,7 +42,7 @@ const Promo = () => {
                         <DetailsPromo3/>
                     </div>
                 </a>
-                <a className='container__promo' href="">
+                <a className='container__promo' href="!#">
                     <img className='img__promo' src={Promo4} alt="" />
                     <div className="details__promo">
                         {/* <h6>Función de descuento</h6> */}
@@ -50,7 +50,7 @@ const Promo = () => {
                         <DetailsPromo4/>
                     </div>
                 </a>
-                <a className='container__promo' href="">
+                <a className='container__promo' href="!#">
                     <img className='img__promo' src={Promo5} alt="" />
                     <div className="details__promo">
                         {/* <h6>Función de descuento</h6> */}
@@ -58,7 +58,7 @@ const Promo = () => {
                         <DetailsPromo5/>
                     </div>
                 </a>
-                <a className='container__promo' href="">
+                <a className='container__promo' href="!#">
                     <img className='img__promo' src={Promo6} alt="" />
                     <div className="details__promo">
                         {/* <h6>Función de descuento</h6> */}
