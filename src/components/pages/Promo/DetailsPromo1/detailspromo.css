@@ -133,3 +133,9 @@ label{
     transition: 0.2s;   
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .lvl-modal{
+        zoom: 0.8;
+    }
+} 

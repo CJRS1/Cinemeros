@@ -127,3 +127,9 @@ label{
     opacity: 0.8;
     transition: var(--transition);
 }
+
+@media screen and (max-width: 600px) {
+    .lvl-modal2{
+        zoom: 0.8;
+    }
+} 

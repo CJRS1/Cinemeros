@@ -14,9 +14,22 @@
     width: 100%;
 
 }
+
+
+
+@media screen and (max-width: 2000px){
+
+    
+    .footer-nav__credits2{
+        display: none;
+    }
+} 
+
+
 @media screen and (max-width: 600px) {
     .footer-nav__credits{
         display: block;
         padding-bottom: 4rem;
     }
 }
+

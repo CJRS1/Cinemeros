@@ -9,7 +9,15 @@ const Footer = () => {
                     class="footer__creditos" target="_blank" rel="noopener noreferrer">Christian Reyes.</a> Todos los derechos
                 reservados.
             </h6>
+            <h6 class="footer-nav__credits2">
+            Copyright &copy; 2022 <a href="https://www.linkedin.com/in/crso/"
+                    class="footer__creditos" target="_blank" rel="noopener noreferrer">Christian Reyes.</a> 
+            </h6>
+            <h6 class="footer-nav__credits2">
+                Todos los derechos reservados.
+            </h6>
         </section>
+        
     )
 }
 

@@ -34,6 +34,8 @@
 .food__container {
     display: flex;
     flex-direction: column;
+    padding: 0 1rem 0 0 ;
+    width: 500px;
 }
 
 .btn__food {
@@ -80,3 +82,29 @@
     justify-content: center;
 
 }
+
+@media screen and (max-width: 1024px) {
+
+    .card__fooddetails {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .card__fooddetails {
+        width: 400px;
+    }
+    .food__details{
+        width: 280px;
+    }
+    .food__container{
+        width: 280px;
+    }
+    .container__fooddetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+} 

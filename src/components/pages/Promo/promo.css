@@ -27,10 +27,6 @@
     opacity: 0.5;
 }
 
-.btn{
-
-}
-
 .div__promo{
     display: inline;
     justify-content: center;
@@ -39,3 +35,17 @@
     transition: var(--transition);
 }
 
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    .container__promo{
+        zoom: 3;
+    }
+    .nav__promo{
+        display: flex;
+        flex-direction: column;
+    }
+} 
