@@ -5,20 +5,31 @@ import './detailspromo2.css';
 const DetailsPromo2 = () => {
     return (
         <div className='body__detailspromo2'>
+
             <input type="checkbox" id="btn-modal2" />
-            <label for="btn-modal2" className='lvl-modal2'>VER DETALLES</label>
+
+
+            <div className="body_viewdetail2">
+                
+                <label for="btn-modal2">
+                <div className="body_ib2">
+                <img for="btn-modal2" className='img__promo' src={Promo2} alt="" />
+                <h6  className='lvl-modal2'>VER DETALLES</h6>
+                </div>
+                
+                </label>
+            </div>
 
             <div className="modal2">
-                <div className="container__detailspromo">
-                    <div className="container__detailspromo-header">
+                <div className="container__detailspromo2">
+                    <div className="container__detailspromo-header2">
                         <header>DESCRIPCIÓN DE LA PROMOCIÓN</header>
-                        <label for="btn-modal2">X</label>
+                        <label for="btn-modal2" className='close2'>X</label>
                     </div>
-                    
-                    <div className="container__descriptionpromo">
+                    <div className="container__descriptionpromo2">
                         <img src={Promo2} alt="" />
-                        <div className="card__detailspromo">
-                            <h6>Promoción válida hasta el 30 de Octubre sss
+                        <div className="card__detailspromo2">
+                            <h6>Promoción válida hasta el 30 de Octubre
                             </h6>
                         </div>
                     </div>

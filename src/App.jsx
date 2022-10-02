@@ -10,31 +10,25 @@ import Food from './components/pages/Food/Food'
 import Promo from './components/pages/Promo/Promo'
 
 
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => {
+
     return (
         <>
-            
-
             <BrowserRouter>
-            <Header />
-            <Nav />
-            <Routes>
-
-            <Route exact path="/" element={<Home/>}/> 
-            <Route exact path="/locate" element={<LocateUs/>}/> 
-            <Route exact path="/work" element={<WorkWithUs/>}/> 
-            <Route exact path="/food" element={<Food/>}/> 
-            <Route exact path="/promo" element={<Promo/>}/> 
-            <Route exact path="*" element={<NotFoundPage/>}/> 
-
-            </Routes>
-            <Footer />
+                <Header />
+                <Nav />
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/locate" element={<LocateUs />} />
+                    <Route exact path="/work" element={<WorkWithUs />} />
+                    <Route exact path="/food" element={<Food />} />
+                    <Route exact path="/promo" element={<Promo />} />
+                    <Route exact path="*" element={<NotFoundPage />} />
+                </Routes>
+                <Footer />
             </BrowserRouter>
-
-            
-            
         </>
     )
 }

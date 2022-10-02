@@ -5,13 +5,26 @@ import './detailspromo.css';
 const DetailsPromo1 = () => {
     return (
         <div className='body__detailspromo'>
+
             <input type="checkbox" id="btn-modal" />
-            <label for="btn-modal" className='lvl-modal'>VER DETALLES</label>
+
+
+            <div className="body_viewdetail">
+                
+                <label for="btn-modal">
+                <div className="body_ib">
+                <img for="btn-modal" className='img__promo' src={Promo1} alt="" />
+                <h6  className='lvl-modal'>VER DETALLES</h6>
+                </div>
+                
+                </label>
+            </div>
+
             <div className="modal">
                 <div className="container__detailspromo">
                     <div className="container__detailspromo-header">
                         <header>DESCRIPCIÓN DE LA PROMOCIÓN</header>
-                        <label for="btn-modal">X</label>
+                        <label for="btn-modal" className='close'>X</label>
                     </div>
                     <div className="container__descriptionpromo">
                         <img src={Promo1} alt="" />

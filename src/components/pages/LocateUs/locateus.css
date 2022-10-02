@@ -5,6 +5,7 @@
     padding: 4rem;
     justify-content: center;
     align-items: center;
+    transition: var(--transition);
 }
 
 .card_ubi__LocateUs{

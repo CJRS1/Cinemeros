@@ -1,9 +1,20 @@
 import React from 'react';
 import './locateus.css'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const LocateUs = () => {
+    function useScrollToTop() {
+        const { pathname } = useLocation();
+
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [pathname]);
+    }
+
+    useScrollToTop();
     return (
-        <div className='container__LocateUs'>
+        <div id='#Header' className='container__LocateUs'>
             <div className="container_ubi__LocateUs">
                 <div className="card_ubi__LocateUs">
                     <h3>CINEMEROS MEGAPLAZA</h3>
