@@ -1,6 +1,6 @@
 .modal3{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,6 +130,9 @@ label{
 
 @media screen and (max-width: 600px) {
     .lvl-modal3{
-        zoom: 0.8;
+        zoom: 2;
+    }
+    .container__detailspromo3{
+        zoom: 2;
     }
 } 

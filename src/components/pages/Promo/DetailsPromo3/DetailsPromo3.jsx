@@ -13,7 +13,7 @@ const DetailsPromo3 = () => {
                 
                 <label for="btn-modal3">
                 <div className="body_ib3">
-                <img for="btn-modal3" className='img__promo3' src={Promo3} alt="" />
+                <img for="btn-modal3" className='img__promo' src={Promo3} alt="" />
                 <h6  className='lvl-modal3'>VER DETALLES</h6>
                 </div>
                 

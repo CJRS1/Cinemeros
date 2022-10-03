@@ -33,6 +33,7 @@
     align-items: center;
     height: 100vh;
     transition: var(--transition);
+    
 }
 
 
@@ -42,10 +43,17 @@
 
 @media screen and (max-width: 600px) {
     .container__promo{
-        zoom: 3;
+        width: 100%;
     }
     .nav__promo{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,600px);
+        gap: 3rem 10rem;
+        padding: 3rem;
+        justify-content: center;
+    
+    }
+    .img__promo{
+        width: 500px;
     }
 } 
