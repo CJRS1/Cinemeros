@@ -7,6 +7,7 @@ import {BsCartPlusFill} from 'react-icons/bs'
 import {NavLink} from 'react-router-dom'
 import {HashLink as Link} from 'react-router-hash-link'
 
+
 const Header = () => {
   return (
     
@@ -17,6 +18,7 @@ const Header = () => {
       <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className='nav_menu'><BsInstagram style={{ fontSize: '30px' }} /></a>
       <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"  className='nav_menu'><AiFillTwitterCircle style={{ fontSize: '30px' }} /></a>
       </nav>
+      
       <nav className='nav_container'>
 
       <Link to="/#contact"  className='nav_menu'>Contáctanos</Link>
@@ -24,8 +26,11 @@ const Header = () => {
       <NavLink to="/work" className='nav_menu' >Trabaja con nosotros</NavLink>
       </nav>
       <nav className='nav_container'>
-      <button className="btn">Registrarse</button>
-      <button className="btn">Iniciar sesión</button>
+
+      <NavLink to="/register" className='btn' >Registrarse</NavLink>
+      <NavLink to="/singin" className='btn' >Iniciar sesión</NavLink>
+      {/* <button className="btn">Registrarse</button>
+      <button className="btn">Iniciar sesión</button> */}
       <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className='nav_menu' ><BsCartPlusFill style={{ fontSize: '30px' }} /></a>
       </nav>
       

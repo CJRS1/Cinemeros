@@ -8,7 +8,8 @@ import Footer from './components/footer/Footer'
 import NotFoundPage from './components/pages/NotFoundPage/NotFoundPage'
 import Food from './components/pages/Food/Food'
 import Promo from './components/pages/Promo/Promo'
-
+import SingIn from './components/pages/Singin/SingIn'
+import Register from './components/pages/Register/Register'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -25,6 +26,8 @@ const App = () => {
                     <Route exact path="/work" element={<WorkWithUs />} />
                     <Route exact path="/food" element={<Food />} />
                     <Route exact path="/promo" element={<Promo />} />
+                    <Route exact path="/singin" element={<SingIn />} />
+                    <Route exact path="/register" element={<Register />} />
                     <Route exact path="*" element={<NotFoundPage />} />
                 </Routes>
                 <Footer />

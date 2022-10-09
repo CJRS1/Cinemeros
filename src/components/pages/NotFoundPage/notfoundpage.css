@@ -1,0 +1,50 @@
+.Container_error{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: transparent;
+    transition: 0s;
+    font-size:4rem;
+    background: var(--color-bg-variant);
+    z-index: 100;
+}
+
+.Card_error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.h6_error{
+        font-size: 2.5rem;
+    }
+    
+
+@media screen and (max-width: 600px){
+    .Card_error{
+        width: 90%;
+    } 
+    p{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    
+    h6{
+        font-size: 1.5rem;
+    }
+    
+}

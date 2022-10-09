@@ -4,6 +4,8 @@ import Contact from '../../contact/Contact'
 import IndividualIntervalsExample from '../../carousel/Carousel'
 
 const Home = () => {
+
+
     return (
         <>
             <IndividualIntervalsExample />

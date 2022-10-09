@@ -1,5 +1,5 @@
 .container.contact__container{
-    width:58%;
+    /* width:58%; */
     display: grid;
     grid-template-columns: 30% 58%;
     gap: 12%
@@ -17,6 +17,7 @@
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
+    width: 300px;
     transition: var(--transition);
 }
 
@@ -83,6 +84,9 @@ input,textarea{
     } 
     .contact__option{
         width: 50%;
+    }
+    h5{
+        display: none;
     }
 
 }

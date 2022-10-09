@@ -6,6 +6,7 @@ import './carousel.css'
 import * as React from 'react'
 
 function IndividualIntervalsExample() {
+
     return (
         <Carousel >
             <Carousel.Item interval={5000}>
