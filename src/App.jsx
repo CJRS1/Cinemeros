@@ -10,6 +10,7 @@ import Food from './components/pages/Food/Food'
 import Promo from './components/pages/Promo/Promo'
 import SingIn from './components/pages/Singin/SingIn'
 import Register from './components/pages/Register/Register'
+import MovieDetails from './components/pages/MovieDetails/MovieDetails'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -29,6 +30,7 @@ const App = () => {
                     <Route exact path="/singin" element={<SingIn />} />
                     <Route exact path="/register" element={<Register />} />
                     <Route exact path="*" element={<NotFoundPage />} />
+                    <Route exact path="/movies/:movieId" element={<MovieDetails />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>

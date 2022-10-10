@@ -1,0 +1,19 @@
+.detailContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+
+}
+.description{
+    text-align: justify;
+}
+.movieImage{
+    border-radius: 10px;
+    background-color: azure;
+}
+.Container_description{
+    width: 500px;
+}
