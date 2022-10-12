@@ -25,12 +25,12 @@ const App = () => {
                     <Route exact path="/Cinemeros" element={<Home />} />
                     <Route exact path="/Cinemeros/locate" element={<LocateUs />} />
                     <Route exact path="/Cinemeros/work" element={<WorkWithUs />} />
-                    <Route exact path="/food" element={<Food />} />
-                    <Route exact path="/promo" element={<Promo />} />
-                    <Route exact path="/singin" element={<SingIn />} />
-                    <Route exact path="/register" element={<Register />} />
+                    <Route exact path="/Cinemeros/food" element={<Food />} />
+                    <Route exact path="/Cinemeros/promo" element={<Promo />} />
+                    <Route exact path="/Cinemeros/singin" element={<SingIn />} />
+                    <Route exact path="/Cinemeros/register" element={<Register />} />
                     <Route exact path="*" element={<NotFoundPage />} />
-                    <Route exact path="/movies/:movieId" element={<MovieDetails />} />
+                    <Route exact path="/Cinemeros/movies/:movieId" element={<MovieDetails />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
