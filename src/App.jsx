@@ -22,9 +22,9 @@ const App = () => {
                 <Header />
                 <Nav />
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route exact path="/locate" element={<LocateUs />} />
-                    <Route exact path="/work" element={<WorkWithUs />} />
+                    <Route exact path="/Cinemeros" element={<Home />} />
+                    <Route exact path="/Cinemeros/locate" element={<LocateUs />} />
+                    <Route exact path="/Cinemeros/work" element={<WorkWithUs />} />
                     <Route exact path="/food" element={<Food />} />
                     <Route exact path="/promo" element={<Promo />} />
                     <Route exact path="/singin" element={<SingIn />} />
