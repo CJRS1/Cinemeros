@@ -24,201 +24,217 @@ const Food = () => {
 
     useScrollToTop();
 
+
+    const [cantidad1, setCantidad1] = React.useState(0);
+
+    function limite(cantidad){
+        if (cantidad<0){
+            cantidad=0;
+        }
+        return cantidad;
+    }
     return (
         <div className='container__fooddetails'>
             <div className="card__fooddetails">
                 <img src={combotrio} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>COMBO TRIO</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>COMBO TRIO</h5>
+                            <h5>S/ 71.00 </h5>
+                        </div>
+                        <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
-                    <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'
+                                onClick={()=>{setCantidad1(cantidad1 - 1)
+                                }}
+                            >-</button>
+
+                            <span> {limite(cantidad1)} </span>
+                            <button className='btn__food'
+                            onClick={()=>{setCantidad1(cantidad1 + 1)
+                            }}
+                            >+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={comboduo} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>COMBO DUO</h5>
-                        <h5>S/ 56.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>COMBO DUO</h5>
+                            <h5>S/ 56.00</h5>
+                        </div>
+                        <p>2 CANCHITAS MEDIANAS SALADAS + 2 GASEOSAS GRANDES</p>
                     </div>
-                    <p>2 CANCHITAS MEDIANAS SALADAS + 2 GASEOSAS GRANDES</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={combopersonal1} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>COMBO PERSONAL 1</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>COMBO PERSONAL 1</h5>
+                            <h5>S/ 71.00</h5>
+                        </div>
+                        <p>1 CANCHITA MEDIANA C/SAL + 1 GASEOSA MEDIANA</p>
                     </div>
-                    <p>1 CANCHITA MEDIANA C/SAL + 1 GASEOSA MEDIANA</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={gaseosagrande} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>GASEOSA GRANDE</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>GASEOSA GRANDE</h5>
+                            <h5>S/ 71.00</h5>
+                        </div>
+                        <p>1 CANCHITA MEDIANA C/SAL + 1 GASEOSA GRANDE</p>
                     </div>
-                    <p>1 CANCHITA MEDIANA C/SAL + 1 GASEOSA GRANDE</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={gaseosamediana} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>GASEOSA MEDIANA</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>GASEOSA MEDIANA</h5>
+                            <h5>S/ 71.00</h5>
+                        </div>
+                        <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
-                    <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={agua} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>AGUA</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>AGUA</h5>
+                            <h5>S/ 71.00</h5>
+                        </div>
+                        <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
-                    <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={papas} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>PAPAS</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>PAPAS</h5>
+                            <h5>S/ 71.00</h5>
+                        </div>
+                        <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
-                    <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
-            </div>
-                </div>
-                
             </div>
             <div className="card__fooddetails">
                 <img src={combopersonal2} className="img__food" alt="" />
                 <div className="food__container">
-                <div className="food__details">
-                    <div className="food__name">
-                        <h5>COMBO PERSONAL 2</h5>
-                        <h5>S/ 71.00</h5>
+                    <div className="food__details">
+                        <div className="food__name">
+                            <h5>COMBO PERSONAL 2</h5>
+                            <h5>S/ 71.00</h5>
+                        </div>
+                        <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
-                    <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
+
+                    <div className="food__botoncanasta">
+
+                        <div className="food__bcounter">
+                            <button className='btn__food'>-</button>
+                            <span>0</span>
+                            <button className='btn__food'>+</button>
+
+                        </div>
+
+                    </div>
                 </div>
 
-                <div className="food__botoncanasta">
-
-                <div className="food__bcounter">
-                <button className='btn__food'>-</button>
-                <span>0</span>
-                <button className='btn__food'>+</button>
-
-                </div>
-                
             </div>
-                </div>
-                
-            </div>
-            
+
         </div>
     );
 };

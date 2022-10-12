@@ -14,6 +14,7 @@
     font-size: 4rem;
     background: var(--color-bg-variant);
     z-index: 100;
+    padding-top: 12rem;
 
 }
 
@@ -109,15 +110,21 @@ input {
     text-align: center;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1200px) {
 
     .container_back2{
         visibility: hidden;
     }
+    /* .container_label{
+        padding-top: 10rem;
+    }  */
 }
 
 
 @media screen and (max-width: 700px) {
+    .Container_SingIn {
+        padding-top: 2rem;
+    }
     input {
         width: 300px;
     }
@@ -127,12 +134,13 @@ input {
         text-align: center;
     }
 
+
     .Card_label {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding-top: 0rem;
     }
 
     .Card_form {
@@ -160,5 +168,6 @@ input {
         display: flex;
         justify-content: flex-end;
     }
+
     
 }
