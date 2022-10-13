@@ -19,11 +19,11 @@ const Nav = () => {
 
         <div className='menu__nav-container'>
             <nav className='menu__container' ref={navRef}>
-                <Link to="/#Header" onClick={showNavbar}> <img className='img_logo' src={logo} alt="Cinemeros" /></Link>
-                <Link to="/#Listings" onClick={showNavbar}><BiMoviePlay style={{ fontSize: '30px' }} />  Películas </Link>
-                <NavLink to="/locate" onClick={showNavbar}><MdOutlinePlace style={{ fontSize: '30px' }} /> Ubícanos</NavLink>
-                <NavLink to="/promo" onClick={showNavbar}><GiSpellBook style={{ fontSize: '30px' }} /> Promociones</NavLink>
-                <NavLink to="/food" onClick={showNavbar}><MdFastfood style={{ fontSize: '30px' }} /> Alimentos y bebidas</NavLink>
+                <Link to="/Cinemeros/#Header" onClick={showNavbar}> <img className='img_logo' src={logo} alt="Cinemeros" /></Link>
+                <Link to="/Cinemeros/#Listings" onClick={showNavbar}><BiMoviePlay style={{ fontSize: '30px' }} />  Películas </Link>
+                <NavLink to="/Cinemeros/locate" onClick={showNavbar}><MdOutlinePlace style={{ fontSize: '30px' }} /> Ubícanos</NavLink>
+                <NavLink to="/Cinemeros/promo" onClick={showNavbar}><GiSpellBook style={{ fontSize: '30px' }} /> Promociones</NavLink>
+                <NavLink to="/Cinemeros/food" onClick={showNavbar}><MdFastfood style={{ fontSize: '30px' }} /> Alimentos y bebidas</NavLink>
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />
                 </button>

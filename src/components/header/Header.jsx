@@ -21,14 +21,14 @@ const Header = () => {
       
       <nav className='nav_container'>
 
-      <Link to="/#contact"  className='nav_menu'>Contáctanos</Link>
+      <Link to="/Cinemeros/#contact"  className='nav_menu'>Contáctanos</Link>
 
-      <NavLink to="/work" className='nav_menu' >Trabaja con nosotros</NavLink>
+      <NavLink to="/Cinemeros/work" className='nav_menu' >Trabaja con nosotros</NavLink>
       </nav>
       <nav className='nav_container'>
 
-      <NavLink to="/register" className='btn' >Registrarse</NavLink>
-      <NavLink to="/singin" className='btn' >Iniciar sesión</NavLink>
+      <NavLink to="/Cinemeros/register" className='btn' >Registrarse</NavLink>
+      <NavLink to="/Cinemeros/singin" className='btn' >Iniciar sesión</NavLink>
       {/* <button className="btn">Registrarse</button>
       <button className="btn">Iniciar sesión</button> */}
       <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className='nav_menu' ><BsCartPlusFill style={{ fontSize: '30px' }} /></a>
