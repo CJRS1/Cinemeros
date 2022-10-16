@@ -44,11 +44,12 @@ const SingIn = () => {
         if (status === 200) {
             e.target.reset();
             window.localStorage.setItem("token", json.token);
-            navigate("/singin");
+            alert("Credenciales correctas");
+            navigate("/Cinemeros/singin");
         } else {
             e.target.reset();
             alert("Credenciales incorrectas");
-            navigate("/singin");
+            navigate("/Cinemeros/singin");
 
         };
 
@@ -71,7 +72,7 @@ const SingIn = () => {
 
         <div className='Container_SingIn'>
             <div className="container_back1">
-                <nav className='btn_back1'><NavLink to="/">Volver</NavLink></nav>
+                <nav className='btn_back1'><NavLink to="/Cinemeros/">Volver</NavLink></nav>
             </div>
             <div className="container_label">
                 <h6 className='label_h6'>¡Bienvenido! Inicia sesión por favor.</h6>
@@ -89,7 +90,7 @@ const SingIn = () => {
                     <button className='btn' type='submit'>Iniciar sesión</button>
                 </div>
                 <div className="container_back2">
-                    <nav className='btn_back2'><NavLink to="/">Volver</NavLink></nav>
+                    <nav className='btn_back2'><NavLink to="/Cinemeros/">Volver</NavLink></nav>
                 </div>
             </form>
 

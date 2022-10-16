@@ -17,3 +17,13 @@
 .Container_description{
     width: 500px;
 }
+
+@media screen and (max-width: 600px){
+    .detailContainer{
+        padding-top: 5rem;
+        padding-left: 3rem;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+}

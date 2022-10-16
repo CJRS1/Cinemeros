@@ -60,6 +60,10 @@ input,textarea{
     align-items: center;
 }
 
+.Mensaje{
+    color: var(--color-primary-variant)
+}
+
 @media screen and (max-width:1024px) {
     .container.contact__container{
         grid-template-columns: 1fr;

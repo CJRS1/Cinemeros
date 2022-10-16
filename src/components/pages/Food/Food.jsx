@@ -26,10 +26,19 @@ const Food = () => {
 
 
     const [cantidad1, setCantidad1] = React.useState(0);
+    const [cantidad2, setCantidad2] = React.useState(0);
+    const [cantidad3, setCantidad3] = React.useState(0);
+    const [cantidad4, setCantidad4] = React.useState(0);
+    const [cantidad5, setCantidad5] = React.useState(0);
+    const [cantidad6, setCantidad6] = React.useState(0);
+    const [cantidad7, setCantidad7] = React.useState(0);
+    const [cantidad8, setCantidad8] = React.useState(0);
 
-    function limite(cantidad){
-        if (cantidad<0){
-            cantidad=0;
+
+
+    function limite(cantidad) {
+        if (cantidad < 0) {
+            cantidad = 0;
         }
         return cantidad;
     }
@@ -50,14 +59,18 @@ const Food = () => {
 
                         <div className="food__bcounter">
                             <button className='btn__food'
-                                onClick={()=>{setCantidad1(cantidad1 - 1)
+                                onClick={() => {
+                                    setCantidad1(cantidad1-1)
+
                                 }}
                             >-</button>
 
                             <span> {limite(cantidad1)} </span>
                             <button className='btn__food'
-                            onClick={()=>{setCantidad1(cantidad1 + 1)
-                            }}
+                                onClick={() => {
+                                    setCantidad1(cantidad1+1)
+
+                                }}
                             >+</button>
 
                         </div>
@@ -80,9 +93,20 @@ const Food = () => {
                     <div className="food__botoncanasta">
 
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad2(cantidad2 - 1)
+
+                                }}
+                            >-</button>
+
+                            <span> {limite(cantidad2)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad2(cantidad2 + 1)
+
+                                }}
+                            >+</button>
 
                         </div>
 
@@ -96,7 +120,7 @@ const Food = () => {
                     <div className="food__details">
                         <div className="food__name">
                             <h5>COMBO PERSONAL 1</h5>
-                            <h5>S/ 71.00</h5>
+                            <h5>S/ 35.00</h5>
                         </div>
                         <p>1 CANCHITA MEDIANA C/SAL + 1 GASEOSA MEDIANA</p>
                     </div>
@@ -104,9 +128,18 @@ const Food = () => {
                     <div className="food__botoncanasta">
 
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad3(cantidad3 - 1)
+                                }}
+                            >-</button>
+
+                            <span> {limite(cantidad3)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad3(cantidad3 + 1)
+                                }}
+                            >+</button>
 
                         </div>
 
@@ -120,18 +153,25 @@ const Food = () => {
                     <div className="food__details">
                         <div className="food__name">
                             <h5>GASEOSA GRANDE</h5>
-                            <h5>S/ 71.00</h5>
+                            <h5>S/ 9.00</h5>
                         </div>
                         <p>1 CANCHITA MEDIANA C/SAL + 1 GASEOSA GRANDE</p>
                     </div>
 
                     <div className="food__botoncanasta">
-
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad4(cantidad4 - 1)
+                                }}
+                            >-</button>
 
+                            <span> {limite(cantidad4)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad4(cantidad4 + 1)
+                                }}
+                            >+</button>
                         </div>
 
                     </div>
@@ -144,19 +184,27 @@ const Food = () => {
                     <div className="food__details">
                         <div className="food__name">
                             <h5>GASEOSA MEDIANA</h5>
-                            <h5>S/ 71.00</h5>
+                            <h5>S/ 7.00</h5>
                         </div>
                         <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
 
                     <div className="food__botoncanasta">
-
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad5(cantidad5 - 1)
+                                }}
+                            >-</button>
 
+                            <span> {limite(cantidad5)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad5(cantidad5 + 1)
+                                }}
+                            >+</button>
                         </div>
+
 
                     </div>
                 </div>
@@ -168,7 +216,7 @@ const Food = () => {
                     <div className="food__details">
                         <div className="food__name">
                             <h5>AGUA</h5>
-                            <h5>S/ 71.00</h5>
+                            <h5>S/ 5.00</h5>
                         </div>
                         <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
@@ -176,11 +224,20 @@ const Food = () => {
                     <div className="food__botoncanasta">
 
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad6(cantidad6 - 1)
+                                }}
+                            >-</button>
 
+                            <span> {limite(cantidad6)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad6(cantidad6 + 1)
+                                }}
+                            >+</button>
                         </div>
+
 
                     </div>
                 </div>
@@ -192,7 +249,7 @@ const Food = () => {
                     <div className="food__details">
                         <div className="food__name">
                             <h5>PAPAS</h5>
-                            <h5>S/ 71.00</h5>
+                            <h5>S/ 10.00</h5>
                         </div>
                         <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
@@ -200,11 +257,20 @@ const Food = () => {
                     <div className="food__botoncanasta">
 
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad7(cantidad7 - 1)
+                                }}
+                            >-</button>
 
+                            <span> {limite(cantidad7)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad7(cantidad7 + 1)
+                                }}
+                            >+</button>
                         </div>
+
 
                     </div>
                 </div>
@@ -216,7 +282,7 @@ const Food = () => {
                     <div className="food__details">
                         <div className="food__name">
                             <h5>COMBO PERSONAL 2</h5>
-                            <h5>S/ 71.00</h5>
+                            <h5>S/ 40.00</h5>
                         </div>
                         <p>3 CANCHITAS MEDIANAS SALADAS + 3 GASEOSAS MEDIANAS</p>
                     </div>
@@ -224,11 +290,20 @@ const Food = () => {
                     <div className="food__botoncanasta">
 
                         <div className="food__bcounter">
-                            <button className='btn__food'>-</button>
-                            <span>0</span>
-                            <button className='btn__food'>+</button>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad8(cantidad8 - 1)
+                                }}
+                            >-</button>
 
+                            <span> {limite(cantidad8)} </span>
+                            <button className='btn__food'
+                                onClick={() => {
+                                    setCantidad8(cantidad8 + 1)
+                                }}
+                            >+</button>
                         </div>
+
 
                     </div>
                 </div>

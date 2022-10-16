@@ -28,6 +28,7 @@
 
 @media screen and (max-width: 600px) {
     .footer-nav__credits{
+        font-size: 1rem;
         display: block;
         padding-bottom: 4rem;
     }

@@ -22,7 +22,7 @@ function ListingsCard({ movie }) {
         <>
 
             <li className='listingsCard'>
-                <Link to={"/movies/" + movie.id}>
+                <Link to={"movies/" + movie.id}>
                     <img className='movieImage' src={imageUrl} alt={movie.title} width={230} height={345} />
                 </Link>
                 {/* <div >{movie.title}</div> */}
