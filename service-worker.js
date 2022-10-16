@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Cinemeros/precache-manifest.0be9de7392a53a4d037d96e7098c85ee.js"
+  "/Cinemeros/precache-manifest.e687859ca966047d3ed5604a8e145b6c.js"
 );
 
 workbox.clientsClaim();

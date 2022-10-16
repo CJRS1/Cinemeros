@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5e24cdfcd88cd0f43171",
-    "url": "/Cinemeros/static/css/main.c078dfc9.chunk.css"
+    "revision": "423df9228952461a260d",
+    "url": "/Cinemeros/static/css/main.006c549f.chunk.css"
   },
   {
-    "revision": "5e24cdfcd88cd0f43171",
-    "url": "/Cinemeros/static/js/main.64426196.chunk.js"
+    "revision": "423df9228952461a260d",
+    "url": "/Cinemeros/static/js/main.82dfc735.chunk.js"
   },
   {
     "revision": "21f65efb6ebd7d9dbcd3",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/Cinemeros/static/media/Promo6.6b35698f.png"
   },
   {
-    "revision": "7d11b370e657597368ab096ff67e0ceb",
+    "revision": "ce3c67e2d2f2c0b716eb36ba280b2220",
     "url": "/Cinemeros/index.html"
   }
 ];
