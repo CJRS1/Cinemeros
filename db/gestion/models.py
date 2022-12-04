@@ -17,39 +17,39 @@ class UsuarioModel(AbstractBaseUser,PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_active=models.BooleanField(default=True)
     createdAt=models.DateTimeField(auto_now_add=True,db_column='created_at')
-    objecs = UsuarioManager()
-
+    objects = UsuarioManager()
     USERNAME_FIELD='correo'
-
     REQUIRED_FIELDS=['nombre','apellido','tipoUsuario']
-
     class Meta: 
         db_table = 'usuarios'
 
 
 class CineModel(models.Model):
     id = models.AutoField(primary_key=True,null=False,unique=True)
-    direccion = models.CharField(max_length=50,null=False)
-    salas = models.IntegerField(unique=True)
-    fechaCreacion = models.DateTimeField(auto_now_add=True,db_column='fecha_creacion')
-    id_sala = models.CharField(max_length=15, unique=True)
+    direccion = models.CharField(max_length=50,null=False,unique=True)
+    cantSalas = models.IntegerField(null=False)
+    fechaCreacion = models.DateTimeField(auto_now_add=True,db_column='fecha_creacion',null=False)
 
     class Meta:
         db_table='cines'
 
 class SalaModel(models.Model):
-    id_sala = models.CharField(max_length=15,unique=True)
-    cantasientos = models.IntegerField()
-    id_asiento = models.CharField(max_length=2,unique=True)
+    id = models.AutoField(primary_key=True,null=False,unique=True)
+    id_sala = models.CharField(max_length=10,unique=True,null=False)
+    cantAsientos = models.IntegerField(null=False)
     duracion = models.TimeField(null=False)
     pelicula = models.CharField(max_length=50)
+    cine_id = models.CharField(max_length=15,unique=True,null=False)
 
     class Meta:
         db_table='salas'
 
 class AsientoModel(models.Model):
-    id_asiento = models.CharField(max_length=2,unique=True)
+    id = models.AutoField(primary_key=True,null=False,unique=True)
+    id_asiento = models.CharField(max_length=2,unique=True,null=False)
     disponibilidad = models.BooleanField(default=True)
-    
+    fechaCreacion = models.DateTimeField(auto_now_add=True,db_column='fecha_creacion',null=False)
+    sala_id = models.CharField(max_length=15,unique=True,null=False)
+
     class Meta:
         db_table='asientos'
