@@ -39,7 +39,7 @@ class SalaModel(models.Model):
     cantAsientos = models.IntegerField(null=False)
     duracion = models.TimeField(null=False)
     pelicula = models.CharField(max_length=50)
-    cine_id = models.CharField(max_length=15,unique=True,null=False)
+    cine_id = models.IntegerField(null=False)
 
     class Meta:
         db_table='salas'
@@ -49,7 +49,7 @@ class AsientoModel(models.Model):
     id_asiento = models.CharField(max_length=2,unique=True,null=False)
     disponibilidad = models.BooleanField(default=True)
     fechaCreacion = models.DateTimeField(auto_now_add=True,db_column='fecha_creacion',null=False)
-    sala_id = models.CharField(max_length=15,unique=True,null=False)
+    sala_id = models.IntegerField(null=False)
 
     class Meta:
         db_table='asientos'

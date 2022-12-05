@@ -1,4 +1,4 @@
-from rest_framework.generics import CreateAPIView, ListCreateAPIView
+from rest_framework.generics import CreateAPIView, ListCreateAPIView, UpdateAPIView
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework import status
@@ -6,7 +6,7 @@ from rest_framework import status
 from .models import UsuarioModel,SalaModel,CineModel,AsientoModel
 from .serializers import UsuarioSerializer,SalaSerializer,CineSerializer,AsientoSerializer
 
-class RegistroUsuarioApiView(CreateAPIView):
+class RegistroUsuarioApiView(ListCreateAPIView):
     queryset = UsuarioModel.objects.all()
     serializer_class = UsuarioSerializer
 
@@ -30,8 +30,30 @@ class RegistroUsuarioApiView(CreateAPIView):
                 'content': nuevoUsuarioSerializado.data
             },status=status.HTTP_201_CREATED)
 
-class RegistroCineApiView(CreateAPIView):
-    queryset = UsuarioModel.objects.all()
+    def get(self,request:Request):
+        usuarios = UsuarioModel.objects.filter(tipoUsuario="USER").all()
+        usuarios_serializados = self.serializer_class(instance=usuarios, many = True)
+        return Response(data={
+            'message':'Los usuarios tipo USER son:',
+            'content': usuarios_serializados.data
+        })
+    def get(self,request:Request):
+        usuarios = UsuarioModel.objects.filter(tipoUsuario="ADMIN").all()
+        usuarios_serializados = self.serializer_class(instance=usuarios, many = True)
+        return Response(data={
+            'message':'Los usuarios tipo ADMIN son:',
+            'content': usuarios_serializados.data
+        })
+    def get(self,request:Request):
+        usuarios = self.get_queryset()
+        usuarios_serializados = self.serializer_class(instance=usuarios, many = True)
+        return Response(data={
+            'message':'Los usuarios son:',
+            'content': usuarios_serializados.data
+        })
+
+class RegistroCineApiView(ListCreateAPIView):
+    queryset = CineModel.objects.all()
     serializer_class = CineSerializer
 
     def post(self,request:Request):
@@ -43,10 +65,15 @@ class RegistroCineApiView(CreateAPIView):
             'content': self.serializer_class(instance=nuevoCine).data
         })
     def get(self,request:Request):
-        pass
+        cines = self.get_queryset()
+        cines_serializados = self.serializer_class(instance=cines, many = True)
+        return Response(data={
+            'message':'Los cines son:',
+            'content': cines_serializados.data
+        })
 
 class RegistroSalaApiView(CreateAPIView):
-    queryset = UsuarioModel.objects.all()
+    queryset = SalaModel.objects.all()
     serializer_class = SalaSerializer
 
     def post(self,request:Request):
@@ -54,11 +81,24 @@ class RegistroSalaApiView(CreateAPIView):
         data.is_valid(raise_exception=True)
         nuevoCine=data.save()
         return Response(data={
-            'message':'Cine creado exitosamente',
+            'message':'Sala creada exitosamente',
             'content': self.serializer_class(instance=nuevoCine).data
         })
-class RegistroAsientoApiView(CreateAPIView):
-    queryset = UsuarioModel.objects.all()
+    def get(self,request:Request):
+        salas = self.get_queryset()
+        salas_serializados = self.serializer_class(instance=salas, many = True)
+        return Response(data={
+            'message':'Las salas son:',
+            'content': salas_serializados.data
+        })
+        
+class SalaUpdateApiView(UpdateAPIView):
+    queryset = SalaModel.objects.all()
+    serializer_class = SalaSerializer
+
+
+class RegistroAsientoApiView(ListCreateAPIView):
+    queryset = AsientoModel.objects.all()
     serializer_class = AsientoSerializer
 
     def post(self,request:Request):
@@ -66,6 +106,26 @@ class RegistroAsientoApiView(CreateAPIView):
         data.is_valid(raise_exception=True)
         nuevoCine=data.save()
         return Response(data={
-            'message':'Cine creado exitosamente',
+            'message':'Asiento creado exitosamente',
             'content': self.serializer_class(instance=nuevoCine).data
         })
+
+class AsientoToggleApiView(ListCreateAPIView):
+    queryset = AsientoModel.objects.all()
+    serializer_class = AsientoSerializer
+
+    def put(self,request:Request):
+        asientoEncontrado = AsientoModel.objects.filter(id=id).first()
+
+        if asientoEncontrado is None:
+            return Response(data={
+                'message':'Asiento no encontrado',
+            }, status = status.HTTP_404_NOT_FOUND)
+
+        asientoEncontrado.disponibilidad=not asientoEncontrado.disponibilidad
+        asientoEncontrado.save()
+
+        return Response(data={
+            'message':'Asiento actualizado exitosamente',
+            'content': self.serializer_class(instance=asientoEncontrado).data
+        },status=status.HTTP_201_CREATED)
