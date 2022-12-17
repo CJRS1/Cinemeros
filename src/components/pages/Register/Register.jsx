@@ -1,29 +1,54 @@
 import './register.css'
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const Register = () => {
+    const [nombre, setNombre] = useState('')
+    const [apellido, setApellido] = useState('')
+    const [correo, setCorreo] = useState('')
+    const [password, setPassword] = useState('')
+    
+    const registrar = (e) => {
+        e.preventDefault();
+        const data = {nombre, apellido, correo, password, tipoUsuario: 'ADMIN'}
+        console.log(nombre)
+        fetch("http://127.0.0.1:8000/registro/", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
+    })
+        .then((request) => {
+            return request.json();
+        })
+        .then((data) => {
+            console.log(data);
+            // window.location.href = "/mostrar-alumnos";
+        })
+        .catch((error) => {
+            console.log("error al crear el alumno");
+        });
+    }
     return (
         <div>
             <form className='Card_form' id="formul">
                 <label className='Card_label' for="nombre">
                     <h6 className='label_h6'>Nombre:</h6>
-                    <input type="text" name='nombre'max_length="15"/>
+                    <input type="text" name='nombre'max_length="15" value={nombre} onChange={(e)=> setNombre(e.target.value)}/>
                 </label>
                 <label className='Card_label' for="apellido">
                     <h6 className='label_h6'>Apellido:</h6>
-                    <input type="text" name='apellido' max_length="15"/>
+                    <input type="text" name='apellido' max_length="15" value={apellido} onChange={(e)=> setApellido(e.target.value)}/>
                 </label>
                 <label className='Card_label' for="correo">
                     <h6 className='label_h6'>Correo:</h6>
-                    <input type="email" name='email' max_length="50"/>
+                    <input type="email" name='email' max_length="50" value={correo} onChange={(e)=> setCorreo(e.target.value)}/>
                 </label>
                 <label className='Card_label' for="password">
                     <h6 className='label_h6'>Contraseña:</h6>
-                    <input type="password" name='password' />
+                    <input type="password" name='password'  value={password} onChange={(e)=> setPassword(e.target.value)}/>
                 </label>
                 <div className="container_btn">
-                    <button type="submit" class="btn btn-primary" id="btn_agregar">
+                    <button type="submit" class="btn btn-primary" id="btn_agregar" onClick={registrar}>
                         Agregar
                     </button>
                 </div>

@@ -13,7 +13,7 @@ class UsuarioModel(AbstractBaseUser,PermissionsMixin):
     tipoUsuario=models.CharField(max_length=13,choices=[
         ('ADMIN','ADMINISTRADOS'),
         ('USER','USUARIO')
-    ],db_column='tipo_usuario')
+    ],db_column='tipo_usuario', default='USER')
     is_staff = models.BooleanField(default=False)
     is_active=models.BooleanField(default=True)
     createdAt=models.DateTimeField(auto_now_add=True,db_column='created_at')
