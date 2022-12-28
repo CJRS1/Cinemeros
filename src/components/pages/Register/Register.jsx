@@ -3,57 +3,66 @@ import './register.css'
 import React, { useState } from 'react';
 
 const Register = () => {
+    
     const [nombre, setNombre] = useState('')
     const [apellido, setApellido] = useState('')
     const [correo, setCorreo] = useState('')
     const [password, setPassword] = useState('')
-    
+
     const registrar = (e) => {
         e.preventDefault();
-        const data = {nombre, apellido, correo, password, tipoUsuario: 'ADMIN'}
+        const data = { nombre, apellido, correo, password }
         console.log(nombre)
         fetch("http://127.0.0.1:8000/registro/", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" },
-    })
-        .then((request) => {
-            return request.json();
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" },
+
         })
-        .then((data) => {
-            console.log(data);
-            // window.location.href = "/mostrar-alumnos";
-        })
-        .catch((error) => {
-            console.log("error al crear el alumno");
-        });
+            .then((request) => {
+                return request.json();
+
+            })
+            .then((data) => {
+                console.log(data);
+                // window.location.href = "/mostrar-alumnos";
+            })
+            .catch((error) => {
+                console.log("error al crear el alumno");
+            });
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
+        document.getElementById("input4").value = "";
     }
+
+
     return (
         <div>
             <form className='Card_form' id="formul">
                 <label className='Card_label' for="nombre">
                     <h6 className='label_h6'>Nombre:</h6>
-                    <input type="text" name='nombre'max_length="15" value={nombre} onChange={(e)=> setNombre(e.target.value)}/>
+                    <input id="input1" type="text" name='nombre' max_length="15" value={nombre} onChange={(e) => setNombre(e.target.value)} />
                 </label>
                 <label className='Card_label' for="apellido">
                     <h6 className='label_h6'>Apellido:</h6>
-                    <input type="text" name='apellido' max_length="15" value={apellido} onChange={(e)=> setApellido(e.target.value)}/>
+                    <input id="input2" type="text" name='apellido' max_length="15" value={apellido} onChange={(e) => setApellido(e.target.value)} />
                 </label>
                 <label className='Card_label' for="correo">
                     <h6 className='label_h6'>Correo:</h6>
-                    <input type="email" name='email' max_length="50" value={correo} onChange={(e)=> setCorreo(e.target.value)}/>
+                    <input id="input3" type="email" name='email' max_length="50" value={correo} onChange={(e) => setCorreo(e.target.value)} />
                 </label>
                 <label className='Card_label' for="password">
                     <h6 className='label_h6'>Contraseña:</h6>
-                    <input type="password" name='password'  value={password} onChange={(e)=> setPassword(e.target.value)}/>
+                    <input id="input4" type="password" name='password' value={password} onChange={(e) => setPassword(e.target.value)} />
                 </label>
                 <div className="container_btn">
-                    <button type="submit" class="btn btn-primary" id="btn_agregar" onClick={registrar}>
+                    <button type="button|submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn_agregar" onClick={registrar} >
                         Agregar
                     </button>
+
                 </div>
             </form>
-
         </div>
     );
 };
