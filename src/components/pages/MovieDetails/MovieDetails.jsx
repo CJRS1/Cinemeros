@@ -6,8 +6,10 @@ import './moviedetails.css'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router';
+import Modal from "./Modal";
 
 const MovieDetails = () => {
+
 
     const { movieId } = useParams();
     const [movie, setMovie] = useState(null);
@@ -34,10 +36,10 @@ const MovieDetails = () => {
 
     const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
 
-const mostrarnombre=()=>{
+    const mostrarnombre = () => {
         const peliculas = JSON.stringify(movie.title)
         // const nombre = movie.title
-        const nombre = {peliculas}
+        const nombre = { peliculas }
         console.log(nombre)
 
         fetch("http://127.0.0.1:8000/pelicula/", {
@@ -59,6 +61,7 @@ const mostrarnombre=()=>{
             });
     }
 
+
     return (
         <div className='detailContainer'>
             <img className='movieImage' src={imageUrl} alt={movie.title} />
@@ -69,10 +72,13 @@ const mostrarnombre=()=>{
                 </p>
                 <p className='description'><strong >Description: </strong> {movie.overview} </p>
             </div>
-            <div className="container_btn">
-                <button type="button|submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn_agregar" >
+            <div className="container_btn" style={{ display: 'block', position: 'initial' }}>
+
+                {/* <button type="button|submit" class="btn btn-primary" variant="primary">
                     Comprar Entradas
-                </button>
+                </button> */}
+                <Modal/>
+
                 <button type="button|submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn_agregar" onClick={mostrarnombre}>
                     Crear Película
                 </button>

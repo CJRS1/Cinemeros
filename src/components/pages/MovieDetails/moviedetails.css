@@ -18,6 +18,11 @@
     width: 500px;
 }
 
+.modal{
+    z-index: 300;
+    display: block;
+}
+
 @media screen and (max-width: 600px){
     .detailContainer{
         padding-top: 5rem;
