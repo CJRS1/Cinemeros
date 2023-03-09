@@ -1,0 +1,46 @@
+.Carousel_items{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+
+    
+}
+
+.Carousel_nav{
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-caption{
+    position: relative;
+    align-items: center;
+
+}
+
+.img_carousel{
+    width: 100px;
+}
+
+.caption_carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .carousel_item{
+    width: 50%;
+} */
+
+.carousel-caption{
+    right: 0%;
+    left: 0%;
+}
+
+.carousel{
+    padding-top: 1rem;
+}
+
+.carousel-indicators{
+    z-index: 0;
+}

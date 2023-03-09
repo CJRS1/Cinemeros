@@ -1,0 +1,173 @@
+.Container_SingIn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: transparent;
+    transition: 0s;
+    font-size: 4rem;
+    background: var(--color-bg-variant);
+    z-index: 100;
+    padding-top: 12rem;
+
+}
+
+.Card_label {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+input {
+    width: 500px;
+    height: 30px;
+}
+
+.label_h6 {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    color: #4db5ff;
+}
+
+.btn_back1 {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.btn_back1:hover {
+    color: var(--color-white);
+    /* color: var(--color-bg); */
+    border-color: transparent;
+}
+.btn_back2 {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    font-size: 2rem;
+}
+
+.btn_back2:hover {
+    color: var(--color-white);
+    /* color: var(--color-bg); */
+    border-color: transparent;
+}
+
+.Card_form {
+    padding: 5rem;
+}
+
+input {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4db5ff;
+    background-color: #fff;
+}
+
+.container_btn {
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    height: 20%;
+}
+
+.container_back1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+
+.container_label{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 2000px) {
+
+    .container_back2{
+        visibility: hidden;
+    }
+    /* .container_label{
+        padding-top: 10rem;
+    }  */
+}
+
+
+@media screen and (max-width: 700px) {
+    .Container_SingIn {
+        padding-top: 2rem;
+    }
+    input {
+        width: 300px;
+    }
+    .label_h6 {
+        
+        width: 80%;
+        text-align: center;
+    }
+
+
+    .Card_label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0rem;
+    }
+
+    .Card_form {
+        padding: 0rem;
+    }
+
+    .container_back {
+        position: fixed;
+        width: 100%;
+        bottom: 13.7%;
+        right: 4%;
+    }
+
+    .container_btn {
+        height: 100px;
+        padding: 0;
+    }
+
+    .container_back1{
+        display: none;
+    }
+
+    .container_back2{
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    
+}

@@ -1,0 +1,138 @@
+.modal5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+
+}
+
+#btn-modal5:checked ~ .modal5{
+    opacity: 1;
+    visibility: visible;
+}
+
+.container__detailspromo5{
+    width:450px;
+    height: 250px;
+    margin: auto;
+    background: var(--color-bg);
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+    color: var(--color-primary);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#btn-modal5:checked ~ .modal5 .container__detailspromo5{
+    transform: translateY(0%);
+}
+
+.container__detailspromo5 header{
+    padding: 1rem 0 0.5rem 0;
+} 
+
+.container__detailspromo5 label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#btn-modal5{
+    display: none;
+}
+
+/* .lvl-modal{
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+.lvl-modal5 {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    font-size: small;
+    transition: var(--transition);
+    
+}
+
+.lvl-modal5:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.container__descriptionpromo5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h6{
+    padding: 1rem 0 1rem 0;
+}
+
+label{
+    color: var(--color-primary);
+}
+
+
+.body_ib5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.close5{
+    background: var(--color-primary);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 3%;
+
+}
+
+.close5:hover{
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+    .lvl-modal5{
+        zoom: 2;
+    }
+    .container__detailspromo5{
+        zoom: 2;
+    }
+} 

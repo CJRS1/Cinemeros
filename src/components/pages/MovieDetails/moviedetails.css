@@ -1,0 +1,34 @@
+.detailContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+
+}
+.description{
+    text-align: justify;
+}
+.movieImage{
+    border-radius: 10px;
+    background-color: azure;
+}
+.Container_description{
+    width: 500px;
+}
+
+.modal{
+    z-index: 300;
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    .detailContainer{
+        padding-top: 5rem;
+        padding-left: 3rem;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+}

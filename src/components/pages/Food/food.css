@@ -1,0 +1,122 @@
+.img__food {
+    width: 100px;
+    height: 130px;
+    border-radius: 0;
+}
+
+.food__name {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.card__fooddetails {
+    display: flex;
+    padding: 1rem;
+    width: 550px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 105%;
+}
+
+.food__details {
+    padding: 1rem;
+    width: 500px;
+}
+
+.food__botoncanasta {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.food__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 0 0 ;
+    width: 500px;
+}
+
+.btn__food {
+    width: 20px;
+    height: 30px;
+    margin: 0 0 0 0;
+    background: none;
+    color: white;
+    padding: 0 1rem 0 1rem;
+}
+
+.food__counter {
+    align-items: center;
+    justify-content: center;
+}
+
+.food__bcounter {
+    border: 1px #DDDDDD solid;
+    display: inline-block;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn__food:hover {
+    color: var(--color-primary)
+}
+
+.food__bcounter:hover {
+    border: 1px var(--color-primary) solid;
+}
+
+
+.container__fooddetails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 600px);
+    gap: 3rem 10rem;
+    padding: 3rem;
+    justify-content: center;
+    
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .card__fooddetails {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .card__fooddetails {
+        width: 380px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0rem;
+    }
+    .food__details{
+        width: 230px;
+    }
+    .food__container{
+        width: 230px;
+    }
+    .container__fooddetails {
+        /* display: flex;
+        /* z-index: 10; */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 400px);
+        gap: 1rem 1rem;
+        padding: 3rem;
+        justify-content: center;
+
+
+    } 
+} 
