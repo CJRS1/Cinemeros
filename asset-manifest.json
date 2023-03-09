@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Cinemeros/static/css/main.7a59d690.css",
+    "main.js": "/Cinemeros/static/js/main.2dd5cd07.js",
+    "static/media/Promocion2.jpg": "/Cinemeros/static/media/Promocion2.142f7439bb0d3beaddba.jpg",
+    "static/media/Promocion1.jpg": "/Cinemeros/static/media/Promocion1.6cc6725ab948c5fce433.jpg",
+    "static/media/Promo5.png": "/Cinemeros/static/media/Promo5.a8d6cfa8dc12f74f1241.png",
+    "static/media/Promo6.png": "/Cinemeros/static/media/Promo6.6b35698f84b8be42c7cc.png",
+    "static/media/Promo3.png": "/Cinemeros/static/media/Promo3.ab66aa5b59eca6393268.png",
+    "static/media/Comunicado.jpg": "/Cinemeros/static/media/Comunicado.66d1dec8758cdc376b66.jpg",
+    "static/media/Promo1.png": "/Cinemeros/static/media/Promo1.470db84fecd20ddc83fb.png",
+    "static/media/Promo4.png": "/Cinemeros/static/media/Promo4.9bcf4c4b02036a9f30c1.png",
+    "static/media/Promo2.png": "/Cinemeros/static/media/Promo2.9e4e2958af80a79b2590.png",
+    "static/media/combotrio.png": "/Cinemeros/static/media/combotrio.f2ee57d9314f6b41a4c3.png",
+    "static/media/comboduo.png": "/Cinemeros/static/media/comboduo.e3725c4f48f4cc142bcd.png",
+    "static/media/gaseosamediana.png": "/Cinemeros/static/media/gaseosamediana.e29900bdf574fad58e43.png",
+    "static/media/Cinemeros.jpg": "/Cinemeros/static/media/Cinemeros.489aa531b84439be1ad8.jpg",
+    "static/media/combopersonal2.png": "/Cinemeros/static/media/combopersonal2.392d4688170f036ed9b3.png",
+    "static/media/combopersonal1.png": "/Cinemeros/static/media/combopersonal1.0a8cdd8f35353cd5ef83.png",
+    "static/media/papas.png": "/Cinemeros/static/media/papas.95bb31f8cf47af6ebea2.png",
+    "static/media/gaseosagrande.png": "/Cinemeros/static/media/gaseosagrande.f8ddfa655516284e468c.png",
+    "static/media/agua.png": "/Cinemeros/static/media/agua.5d06d275abba02aa6537.png",
+    "index.html": "/Cinemeros/index.html",
+    "main.7a59d690.css.map": "/Cinemeros/static/css/main.7a59d690.css.map",
+    "main.2dd5cd07.js.map": "/Cinemeros/static/js/main.2dd5cd07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a59d690.css",
+    "static/js/main.2dd5cd07.js"
+  ]
+}
