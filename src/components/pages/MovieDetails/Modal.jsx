@@ -39,13 +39,7 @@ const Modal = () => {
             return response.json();
         })
         .then((data) => {
-            datas = data
-            // console.log(datas);
-            // console.log(datas.content.length)
-            // console.log(datas.content.length);
-            // a[0] = datas.content[4].id_asiento;
-            // console.log(a)
-            // console.log(datas.content.length)
+            datas = data;
             for (let i = 0; i < datas.content.length; i++) {
                 a[i] = datas.content[i].id_asiento
 
